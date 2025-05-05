@@ -1,0 +1,8 @@
+services:
+  web:
+    image: python:3.13-alpine
+    build: 
+      context: "https://github.com/jose-adso/testad.git"
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
